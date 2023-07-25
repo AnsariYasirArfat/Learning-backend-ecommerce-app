@@ -12,8 +12,9 @@ app.use(cookieParser())
 
 app.use("/api/v1", routes)
 
+
 app.get("/", (_req, res) => {
-    res.send("Hello there hitesh - API")
+    res.send("Hello there Yasir - API")
 })
 
 
@@ -25,3 +26,6 @@ app.all("*", (_req, res) => {
 })
 
 export default app;
+
+// http://localhost:4000/api/v1/auth/login
+// http://localhost:4000/api/v1/auth/logout
